@@ -1,0 +1,52 @@
+/* .cs-container {
+  display: grid;   grid-template-columns: auto 1fr auto; 
+  align-items: center;   position: relative;
+}
+.cs-toggle {
+  display: none;
+}
+.cs-logo {
+    grid-column: 1; }
+.cs-nav {
+  grid-column: 2;    justify-self: center;
+}
+.cs-ul {
+  display: inline-flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+.testbutton{
+    grid-column: 3; 
+justify-self: end; } */
+
+.cs-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.cs-toggle {
+  display: none;
+}
+.cs-logo {
+  background-color: red;
+  flex-grow: 1;
+  flex-basis: 0;
+}
+.cs-nav {
+  background-color: green;
+}
+.cs-ul {
+  display: inline-flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 20px;
+}
+.testbutton {
+  background-color: red;
+  flex-grow: 1;
+  flex-basis: 0;
+}
