@@ -31,12 +31,10 @@ justify-self: end; } */
   display: none;
 }
 .cs-logo {
-  background-color: red;
   flex-grow: 1;
   flex-basis: 0;
 }
 .cs-nav {
-  background-color: green;
 }
 .cs-ul {
   display: inline-flex;
@@ -46,7 +44,7 @@ justify-self: end; } */
   gap: 20px;
 }
 .testbutton {
-  background-color: red;
   flex-grow: 1;
   flex-basis: 0;
+text-align:right;
 }
