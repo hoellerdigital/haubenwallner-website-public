@@ -318,6 +318,19 @@ footer div a:hover,
   margin: 0 auto;
 }
 
+.cs-hide-on-mobile {
+  display: none;
+}
+
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  .cs-hide-on-mobile {
+    display: block;
+  }
+  .cs-hide-on-desktop {
+    display: none;
+  }
+}
 /* .cs-container {
   display: grid;   grid-template-columns: auto 1fr auto; 
   align-items: center;   position: relative;
@@ -376,6 +389,40 @@ justify-self: end; } */
   top: 0;
   left: 0;
   opacity: 0;
+}
+
+.faq a {
+  color: black;
+  background-color: rgba(255, 255, 0, 0.1803921569);
+}
+.faq details {
+  border-bottom: 1px solid rgba(211, 211, 211, 0.3607843137);
+  padding: 30px 0;
+}
+.faq details div {
+  max-width: 550px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.faq {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* For screens 1024px and up */
+@media (min-width: 1024px) {
+  .faq {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+/* For screens 1300px and up */
+@media (min-width: 1300px) {
+  .faq {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

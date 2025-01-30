@@ -1,0 +1,59 @@
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  
+  &__text {
+    max-width: 550px;
+    flex: 1;
+  }
+  &__text ul {
+    list-style: "- ";
+  }
+   &__text a {
+color: black;
+  background-color: rgba(255, 255, 0, 0.1803921569); 
+  }
+  &__image {
+    max-width: 680px;
+    flex: 1 400px;
+    min-height: 350px;
+    margin-left:auto;
+    object-fit: cover;
+    width: 100%;
+    @media (max-width: 1168px) {
+      margin-left: 0; // Ensure no margin when it wraps
+    }
+  }
+  @media (min-width: 670px) {
+    &__text {
+      min-width: 500px;
+    }
+  }
+  @media (max-width: 670px) {
+    &__text {
+      order: 2;
+    }
+  }
+}
+
+.about {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* For screens 1024px and up */
+@media (min-width: 1024px) {
+  .about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+/* For screens 1300px and up */
+@media (min-width: 1300px) {
+  .about {
+    padding-top: $pd-bg;
+    padding-bottom: $pd-bg;
+  }
+}

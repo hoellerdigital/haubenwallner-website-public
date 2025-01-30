@@ -1,0 +1,48 @@
+.therapy {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  &__text {
+    max-width: 550px;
+    flex: 1;
+  }
+  &__image {
+    max-width: 680px;
+    flex: 1 400px;
+    max-height: 100%;
+    margin-right: auto;
+    width:100%;
+    min-height: 350px;
+    object-fit: cover;}
+
+  @media (min-width: 670px) {
+    &__text {
+      min-width: 500px;
+    }
+  }
+  @media (max-width: 670px) {
+    &__text {
+      order: 2;
+    }
+  }
+} 
+.therapy {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+/* For screens 1024px and up */
+@media (min-width: 1024px) {
+  .therapy {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+}
+
+/* For screens 1300px and up */
+@media (min-width: 1300px) {
+  .about {
+    padding-top: $pd-bg;
+    padding-bottom: $pd-bg;
+  }
+}

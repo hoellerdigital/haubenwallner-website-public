@@ -4,10 +4,9 @@ backend:
   branch: master
 
 local_backend: true
-logo_url: https://codestitch.app/frontend/images/logo.png
 
-media_folder: "src/assets/images/blog" # This is for blog images
-public_folder: "/assets/images/blog" # This is for blog images
+media_folder: "src/assets/images/content" # This is for blog images
+public_folder: "/assets/images/content" # This is for blog images
 
 collections:
   - name: "blog"
@@ -37,3 +36,16 @@ collections:
     slug: "{{slug}}"
     fields:
       - { label: "Content", name: "body", widget: "markdown" }
+  - name: "Gallery"
+    label: "Gallery"
+    folder: "src/content/images"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "string" }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Image Caption", name: "imageAlt", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
+  

@@ -1,0 +1,31 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  padding: 0 5%;
+  text-align: center;
+
+  &__text {
+    font-size: clamp(1.875rem, 1.3393rem + 2.2857vw, 2.625rem);
+    line-height: 1.6; // Consider using a unitless value
+    font-family: "Playfair Display";
+    text-align: center;
+
+    @media (min-width: 1366px) {
+      line-height: 1.8; // Consider using a unitless value
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero {
+    height: 60vh;
+  }
+
+  .o-quote--bottom {
+    margin-top: 30%;
+    margin-bottom: 10%;
+  }
+}

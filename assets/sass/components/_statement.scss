@@ -1,0 +1,28 @@
+.statement * {
+  text-align:center;
+  max-width:550px;
+  margin-left:auto;
+  margin-right:auto;
+
+}
+.statement {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+/* For screens 1024px and up */
+@media (min-width: 1024px) {
+    .statement {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+/* For screens 1300px and up */
+@media (min-width: 1300px) {
+  .about {
+    padding-top: $pd-bg;
+    padding-bottom: $pd-bg;
+  }
+}
+

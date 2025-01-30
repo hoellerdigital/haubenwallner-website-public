@@ -1,0 +1,16 @@
+.legal * {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.legal ul {
+  list-style: none;
+  padding: 0;
+}
+.legal{
+margin-top:41px;}
+.legal h2
+  {
+  font-size: clamp(1rem, 1rem + 2.2857vw, 2.4375rem);
+}

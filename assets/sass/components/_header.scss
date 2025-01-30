@@ -1,0 +1,137 @@
+.header {
+  padding-bottom: 33px;
+  padding-top: 30px;
+
+  background: transparent url("/assets/images/areaBody-grey.webp") repeat 0px
+    0px;
+  &__teladress {
+    text-align: right;
+    color: $white;
+  }
+  @media (max-width: 773px) {
+    &__teladress {
+      display: none;
+    }
+
+  }
+  &__teladress a {
+    text-align: right;
+    text-decoration: none;
+    color: $white;
+  }
+  &__circle {
+    width: clamp(50px, 5vw, 78px);
+  }
+  &__title {
+    margin: 0;
+    line-height: 0;
+  }
+  &__name {
+    font-size: clamp(22px, 2vw, 27px);
+    line-height: 0;
+  }
+  &__link {
+    text-decoration: none;
+    color: $white;
+  }
+  &__undertitle {
+    font-size: clamp(20px, 2vw, 25px);
+    line-height: 0;
+  }
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    font-family: "Nunito";
+    font-style: normal;
+    font-weight: 200;
+    gap: 0.5rem;
+  }
+  &__navigation {
+    align-self: end;
+    margin-left: auto;
+    font-size: 30px;
+    color: $white;
+  }
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1300;
+  top: 0;
+  right: 0;
+  background: transparent url("/assets/images/areaBody-darkgrey.webp") repeat
+    0px 0px;
+
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+.overlay .nav__item a {
+  text-decoration: none;
+  color: $white;
+  font-weight: 900;
+}
+.overlay ul {
+  list-style: none;
+  padding-top: 5%;
+  padding-left: 0;
+}
+.overlay-content {
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.overlay a {
+  padding: 12px 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: black;
+  text-transform: uppercase;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+  color: $white;
+}
+.close__helper span {
+  padding-right: 1rem;
+}
+.close__helper {
+  text-align: right;
+  padding-top: 45px;
+}
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+@media (min-width: 150px) and (max-width: 750px) {
+  .overlay a {
+    font-size: 32px;
+  }
+  .overlay .closebtn {
+    font-size: 36px;
+    top: 15px;
+  }
+  .overlay-content {
+    top: 15%;
+  }
+}
+nav span {
+  font-size: 44px;
+  cursor: pointer;
+  line-height: 0;
+  color: $white;
+}
+
+.icon__list {
+  padding-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
